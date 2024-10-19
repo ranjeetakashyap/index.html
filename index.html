@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Professional Resume</title>
+    <link rel="stylesheet" href="ranjeeta.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const themeToggleButton = document.getElementById('theme-toggle');
+            const body = document.body;
+
+            // Set default theme based on user's system preferences
+            const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (isDarkMode) {
+                body.classList.add('dark-theme');
+                themeToggleButton.textContent = 'Light Theme';
+            }
+
+            // Event listener for theme toggle button
+            themeToggleButton.addEventListener('click', function () {
+                body.classList.toggle('dark-theme');
+                
+                // Change the button text based on current theme
+                if (body.classList.contains('dark-theme')) {
+                    themeToggleButton.textContent = 'Light Theme';
+                } else {
+                    themeToggleButton.textContent = 'Dark Theme';
+                }
+              
+            });
+        });
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        a {
+            text-decoration: none; 
+            color: white;
+        }
+
+        .resume {
+            display: flex;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .sidebar {
+            width: 30%;
+            background-color: brown;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+         transition: transform 5s ease;
+        }
+  
+        .email-logo {
+            width: 20px; 
+            height: 20px;
+            vertical-align: middle; 
+            margin-right: 8px; 
+        }
+        .sidebar h1 {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .sidebar p {
+            margin: 5px 0;
+            font-color: black;
+        }
+
+        .main-content {
+            width: 70%;
+            padding: 20px;
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: #2C3E50;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #2C3E50;
+            padding-bottom: 5px;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item h3 {
+            font-size: 16px;
+            color: #2C3E50;
+        }
+
+        .item p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .web {
+            font-size: 10px;
+        }
+
+        /* Dark Theme Styles */
+        body.dark-theme {
+            background-color: rgb(35, 21, 75); /* Dark background */
+            color: black; /* Light text */
+        }
+
+        .sidebar.dark-theme {
+            background-color: #34495e; /* Darker sidebar */
+            color: black; /* Light text */
+        }
+
+        .resume.dark-theme {
+            background-color: grey; /* Dark background for resume */
+        }
+
+        /* Apply the animation to elements */
+        .resume {
+            animation: fadeIn 0.5s ease-in-out; /* Fade in animation */
+        }
+
+        .sidebar,
+        .main-content {
+            animation: fadeIn 0.1s ease-in-out; /* Staggered fade in */
+        }
+
+        /* Optional: Add a hover effect on links */
+        a:hover {
+            color: blue; /* Change color on hover */
+            transition: color 0.1s ease; /* Smooth transition */
+        }
+    </style>
+</head>
+<body class="light-theme"> <!-- Set the default theme here -->
+    <button id="theme-toggle">Dark Theme</button> <!-- Theme toggle button -->
+    
+    <div class="resume">
+        <div class="sidebar">
+          <img src="https://i.postimg.cc/c4k4rvYG/Whats-App-Image-2024-10-19-at-10-58-35-AM-1.jpg" alt="Profile Picture" class="profile-pic">
+
+<h1 class="name">Aditi Verma</h1>
+          <h1 class="web"> web developer</h1>
+          
+          <p>
+  <a href="mailto:aditiverma24@navgurukul.org">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="email-logo">
+   aditiverma24@.org
+  </a>
+</p>
+
+          <p>
+  <a href="tel:+919587553445">
+    <img src="https://cdn-icons-png.flaticon.com/512/709/709609.png" alt="Phone" class="phone-logo">
+    Phone: +919587553445
+  </a>
+</p>
+          <p>
+  <a href="https://www.linkedin.com/in/aditi-verma-2811a1324/" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="linkedin-logo">
+    linkedin.com/in/aditiverma
+  </a>
+</p>
+
+        </div>
+
+        <div class="main-content">
+            <div class="section">
+                <h2>Professional Summary</h2>
+                <p>Innovative web developer skilled in creating responsive and interactive websites. Strong expertise in HTML, CSS, and JavaScript, coupled with a solid understanding of design principles. Committed to delivering high-quality user experiences through attention to detail and a passion for web technology.</p>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <div class="item">
+                    <h3>Master's in Data Science Eternal University, 2023</h3>
+                    <p>Eternal University, 2024 - 2027</p>
+                    <p>CGPA:8.7/10</p>
+                  <p>Bachelor of Computer Science Eternal University, 2023</p>
+
+                  <p>Certification in Full-Stack Web Development
+                    Coursera, 2023</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Work Experience</h2>
+                <div class="item">
+                    <h3>Frontend Developer, BOP Company</h3>
+                    <p>october 2024- Present</p>
+                    <ul>
+                        <li>Developed and optimized user-facing features using HTML, CSS, and JavaScript.</li>
+                        <li>Collaborated with designers and back-end developers to create seamless user experiences.</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>Web Development Intern, Tech</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

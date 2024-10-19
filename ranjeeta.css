@@ -1,0 +1,114 @@
+.linkedin-logo {
+    width: 20px; /* Set the size of the LinkedIn logo */
+    height: 20px;
+    vertical-align: middle; /* Align it with the text */
+    margin-right: 8px; /* Add some space between the logo and the text */
+  }
+  .email-logo {
+    width: 20px; /* Set the size of the email logo */
+    height: 20px;
+    vertical-align: middle; /* Align it with the text */
+    margin-right: 8px; /* Add some space between the logo and the text */
+  }
+  .phone-logo {
+    width: 20px; /* Set the size of the phone logo */
+    height: 20px;
+    vertical-align: middle; /* Align it with the text */
+    margin-right: 8px; /* Add some space between the logo and the text */
+  }
+  a {
+      text-decoration: none; 
+      color: white; /* Default text color */
+      transition: color 0.3s ease; /* Smooth transition */
+  }
+  
+  a:hover {
+      color: #FF5722; /* Change color on hover */
+  }
+  
+  a:active {
+      color: blue; /* Change color when clicked */
+  }
+  @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0); /* Initial position */
+      }
+      40% {
+          transform: translateY(-20px); /* Move up */
+      }
+      60% {
+          transform: translateY(-10px); /* Move down */
+      }
+  }
+  @keyframes fadeInUp {
+      0% {
+          opacity: 0; /* Start transparent */
+          transform: translateY(20px); /* Start slightly below */
+      }
+      100% {
+          opacity: 1; /* End fully visible */
+          transform: translateY(0); /* End at original position */
+      }
+  }
+  
+  .fade-in-up {
+      animation: fadeInUp 0.8s ease forwards; /* Apply the fade-in-up animation */
+  }
+
+  .linkedin-logo {
+    width: 20px; 
+    height: 20px;
+    vertical-align: middle; 
+    margin-right: 8px; 
+  }
+  
+  .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      transition: transform 0.5s ease; /* Optional for smoothness */
+  }
+  
+  
+  
+  .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      transition: transform 0.5s ease; /* Optional for smoothness */
+  }
+  
+  /* Bounce Animation */
+  @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0); /* Initial position */
+      }
+      40% {
+          transform: translateY(20px); /* Move up */
+      }
+      60% {
+          transform: translateY(20px); /* Move down */
+      }
+  }
+  
+  .bounce {
+      animation: bounce 0.6s; /* Apply the bounce animation */
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+      from {
+          opacity: 0; /* Start transparent */
+          transform: translateY(50px); /* Start slightly below */
+      }
+      to {
+          opacity: 1; /* End fully visible */
+          transform: translateY(0); /* End at original position */
+      }
+  }
+  
+  .fade-in {
+      animation: fadeIn 0.8s ease forwards; /* Apply the fade-in animation */
+  }
